@@ -1,0 +1,112 @@
+<DOCTYPE html>
+<html>
+<head>
+        <title>Simple Website</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="classroom">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">SOFTWARE TRAININGS</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="classroom.html">CLASSSROOM TRAINING</a>
+                                <a href="online.html">ONLINE TRAINING</a>
+                                <a href="weekend.html">WEEKEND TRAINING</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <marquee class="marq" direction = "left" loop="yes" >
+            <b>You are in Weekend training page.</b>
+        </marquee>
+    <h1>Registration for Weekend Training</h1>
+    </section>
+    <!------- classroom training -------->
+
+<section>
+<marquee bgcolor ="" width="75%" direction = "left" loop="yes" ><B>Hurry Up!!
+     50% Discount Limited Slots are availble </b>
+    </marquee>
+<form>  
+    <div class="container">  
+    <center>  <h1>Enter Details</h1> </center>  
+    <hr>  
+    <label> <b>Firstname </b></label>   
+  <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+  <label> <b>Middlename: </b></label>   
+  <input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+  <label> <b>Lastname: </b></label>    
+  <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+  <div> 
+  <label>  Mode of Training : <b> WEEKEND TRAINING</b></label> <br><br>
+  <label>  <b> Course : </b></label>   
+  <select>  
+    <option value="Course">Course</option>  
+    <option value="c">C programming</option>  
+    <option value="python">Python</option>  
+    <option value="html">HTML</option>  
+    <option value="Java">Java</option>  
+    <option value="c++">C++</option> 
+  </select>  
+  </div>  
+  <div>  
+  <label> <b>Gender :</b> </label><br>  
+  <input type="radio" value="Male" name="gender" checked > Male   
+  <input type="radio" value="Female" name="gender"> Female   
+  <input type="radio" value="Other" name="gender"> Other  
+    
+  </div>  
+  <label><b>Phone</b> </label>  
+  <input type="text" name="phone" placeholder="phone no." size="10"/ required>    
+   <label for="email"><b>Email</b></label>  
+   <input type="text" placeholder="Enter Email" name="email" required>  
+    
+      <label for="psw"><b>Password</b></label>  
+      <input type="password" placeholder="Enter Password" name="psw" required>  
+    
+      <label for="psw-repeat"><b>Re-type Password</b></label>  
+      <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+      <button type="submit" class="registerbtn">Register</button>    
+  </form>  
+  
+</section>
+<section class="footer">
+        <h4>About Us</h4>
+        <p>We provide best practices for quality learning.
+            We have experienced faculty to train professionals for <br>
+            improving their technology skills to day to day needs.
+            asdf ajd fa hj dahadLoafni ahfia iaua fu </p>
+    </section>
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
