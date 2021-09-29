@@ -1,0 +1,123 @@
+<DOCTYPE html>
+<html>
+<head>
+        <title>Simple Website</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header1">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">SOFTWARE TRAININGS</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="classroom.html">CLASSSROOM TRAINING</a>
+                                <a href="online.html">ONLINE TRAINING</a>
+                                <a href="weekend.html">WEEKEND TRAINING</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <marquee class="marq" direction = "left" loop="yes" >
+            <b>You are in Courses page.</b>
+        </marquee>
+    <h1>Our Courses</h1>
+    </section>
+    <!------- Courses -------->
+
+<section class="course">
+        <h1>List of Courses We Offer</h1>
+        <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+            iPhone Training, Asp.Net Training, Asp.Net MVC Training
+            C#, NET Training, C++ Training, Data Structure Training.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Begineer</h3>
+                <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+                    iPhone Training, Asp.Net Training, Asp.Net MVC Training
+                    C#, NET Training, C++ Training, Data Structure Training.</p>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+                    iPhone Training, Asp.Net Training, Asp.Net MVC Training
+                    C#, NET Training, C++ Training, Data Structure Training.</p>
+            </div>
+            <div class="course-col">
+                <h3>Advanced</h3>
+                <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+                    iPhone Training, Asp.Net Training, Asp.Net MVC Training
+                    C#, NET Training, C++ Training, Data Structure Training.</p>
+            </div>
+        <div>
+    </section>
+    
+    <marquee bgcolor ="" width="75%" direction = "left" loop="yes" ><B>Hurry Up!!
+     50% Discount Limited Slots are availble </b>
+    </marquee>
+    <div class="container"> <center>  <h1>Fill Form</h1> </center>
+        <form>
+                    <label> <b>Full Name </b></label>   
+                        <input type="text" name="firstname" placeholder= "Full Name" size="15" required />   
+                    <label for="email"><b>Email</b></label>  
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                    <div><label><b>Choose Course :</b></label>
+                    <select>  
+                        <option value="Course">Course</option>  
+                        <option value="c">C programming</option>  
+                        <option value="python">Python</option>  
+                        <option value="html">HTML</option>  
+                        <option value="Java">Java</option>  
+                        <option value="c++">C++</option>  
+                        </select>  
+                    </div>
+                    <div>  
+                      <label><b>Gender :</b> </label><br>  
+                      <input type="radio" value="Male" name="gender" checked > <b>Male </b>  
+                      <input type="radio" value="Female" name="gender"> <b>Female </b>  
+                      <input type="radio" value="Other" name="gender"> <b>Other </b>
+    
+                    </div> 
+                    <label><b> Phone :</b></label> 
+                        <input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+                    <button type="submit" class="hero-btn red-btn">Register</button>
+        </form></div>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We provide best practices for quality learning.
+            We have experienced faculty to train professionals for <br>
+            improving their technology skills to day to day needs.
+            asdf ajd fa hj dahadLoafni ahfia iaua fu </p>
+    </section>
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>

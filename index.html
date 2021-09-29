@@ -1,0 +1,103 @@
+<DOCTYPE html>
+<html>
+<head>
+        <title>Simple Website</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">SOFTWARE TRAININGS</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="classroom.html">CLASSSROOM TRAINING</a>
+                                <a href="online.html">ONLINE TRAINING</a>
+                                <a href="weekend.html">WEEKEND TRAINING</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <marquee class="marq" direction = "left" loop="yes" >
+            <b>You are in Home page. This is a sample scrolling text that has scrolls texts to left.</b>
+        </marquee>
+        <div class="text-box">
+            <h1>Welcome to our Website</h1>
+            <p>It is one of the simplest Website which illustrates software trainings<br>
+            displaying our data in our blog and you can contact us</p>
+            <a href="contact.html" class=hero-btn><b></b>Visit Us</a>
+        </div>
+    </section>
+    <section>
+    <marquee bgcolor ="green" direction = "left" loop="yes" ><B>Five-Day Online FDP on "Potential Research Trends in Advanced 
+        Energy Conversion Technologies and Applications" Organised by EEE Department from 6th to 10th December 2021</b>
+    </marquee></section>
+    <section class="course">
+        <h1>List of Courses</h1>
+        <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+            iPhone Training, Asp.Net Training, Asp.Net MVC Training
+            C#, NET Training, C++ Training, Data Structure Training.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Begineer</h3>
+                <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+                    iPhone Training, Asp.Net Training, Asp.Net MVC Training
+                    C#, NET Training, C++ Training, Data Structure Training.</p>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+                    iPhone Training, Asp.Net Training, Asp.Net MVC Training
+                    C#, NET Training, C++ Training, Data Structure Training.</p>
+            </div>
+            <div class="course-col">
+                <h3>Advanced</h3>
+                <p>C, C++, Pyhton, Java, SQL, HTML5, CSS, JavaScript Android Training,
+                    iPhone Training, Asp.Net Training, Asp.Net MVC Training
+                    C#, NET Training, C++ Training, Data Structure Training.</p>
+            </div>
+        <div>
+    </section>
+    <section class="cta">
+        <h1>Enroll our Courses <br> To get better experience</h1>
+        <a href="contact.html" class=hero-btn>CONTACT US</a>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We provide best practices for quality learning.
+            We have experienced faculty to train professionals for <br>
+            improving their technology skills to day to day needs.
+            asdf ajd fa hj dahadLoafni ahfia iaua fu </p>
+    </section>
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>

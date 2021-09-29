@@ -1,0 +1,82 @@
+<DOCTYPE html>
+<html>
+<head>
+        <title>Simple Website</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">SOFTWARE TRAININGS</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="classroom.html">CLASSSROOM TRAINING</a>
+                                <a href="online.html">ONLINE TRAINING</a>
+                                <a href="weekend.html">WEEKEND TRAINING</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <marquee class="marq" direction = "left" loop="yes" >
+            <b>We are in About Us page.</b>
+        </marquee>
+    <h1>About US</h1>
+    </section>
+    <!------- aboust us content -------->
+    <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Simplest Website</h1>
+            <p>Expericing the future of the World. Introduction best learning practices<br>Lorem ipsum dolor sit amet, 
+            notices for closure to three hotels in the city for violating environmental norms.
+During an inspection, the pollution body officials found that the sewage treatment plants at two "hotels" -- Taj Sats Catering Ltd and Ambassador's Sky Chef -- at the IGI Airport Authority Complex were not operating properly.
+The two units are engaged in flight catering activity, according to the showcause notice.
+A showcause notice for closure and imposing an environmental compensation of ₹ 4 lakh each has been issued to the two hotels.
+The sewage treatment plant at the third hotel, The Park, at Parliament Street was "totally defunct".
+"The hotel was founconsectetur adipiscing elit.pellentesque aliquet turpis nulla donec sit.</p>
+            <a href="contact.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/auditorium.jpg">
+        </div>
+    </div>
+</section>
+<section class="footer">
+        <h4>About Us</h4>
+        <p>We provide best practices for quality learning.
+            We have experienced faculty to train professionals for <br>
+            improving their technology skills to day to day needs.
+            asdf ajd fa hj dahadLoafni ahfia iaua fu </p>
+    </section>
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
